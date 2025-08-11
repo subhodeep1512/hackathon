@@ -91,7 +91,7 @@ streamlit run app.py
 ## 👥 Team – AWS Hackathon “AI Titans”
 
 - **Mentor:** Virendra Bhatia  
-- **Team Members:** Subhodeep Mondal, Rakesh Krishnamurthy, Bhupendra Kumar, Binod Kumar Biswal, Abhirup Majumder, Priya Mondal
+- **Team Members:** Subhodeep Mondal, Rakesh Krishnamurthy, Bhupendra Kumar, Binod Kumar Biswal, Abhirup Majumder, Priya Mandal
 
 ---
 
