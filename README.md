@@ -1,7 +1,6 @@
 # 🧠 Together – AI-Powered Mental Health Companion
 
-**Together** is an AI-powered mental health application that transcribes, understands, and summarizes personal video diaries while detecting emotional states.  
-It helps individuals **track emotional well-being over time**, recognize patterns, receive actionable recommendations, and share insights with therapists or counselors for more personalized and effective mental health support.
+🧠 Together is an AI-powered mental health companion that transcribes and summarizes patient's videos, detects emotions, and recommends actions. It helps patients track emotional well-being, spot patterns, and share insights with therapists for more personalized support.
 
 ---
 
