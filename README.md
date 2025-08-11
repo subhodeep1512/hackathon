@@ -35,7 +35,7 @@
 | Summarization      | [DistilBART CNN-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6) |
 | Emotion Detection  | [Emotion English DistilRoBERTa Base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) |
 | Frontend           | Streamlit |
-| Backend            | AWS SageMaker |
+| Backend            | AWS SageMaker AI |
 | Storage            | AWS S3 |
 | Audio Processing   | ffmpeg, moviepy |
 
