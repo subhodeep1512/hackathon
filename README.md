@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - **🎙 Video-to-Text Transcription**  
-  - Converts personal video diaries into accurate, time-stamped transcripts.  
+  - Generates accurate transcripts from videos uploaded by patients.  
   - Uses **[OpenAI Whisper](https://github.com/openai/whisper)** for high-accuracy speech recognition across accents and noise levels.  
   - Audio preprocessing with `ffmpeg` and `moviepy` for clarity.  
 
@@ -17,9 +17,8 @@
   - Identifies emotional triggers and suggests mental wellness actions.
 
 - **📊 Emotional Progress Tracking**  
-  - Tracks emotional changes and key symptoms over time.  
   - Displays progress in interactive dashboards.  
-  - Supports early detection of mental health concerns.
+  - Allows checking and managing schedules in the in-app calendar for therapy sessions and wellness activities.
 
 - **☁ Cloud-Ready Deployment**  
   - **Streamlit** interface for easy video recording/upload.  
