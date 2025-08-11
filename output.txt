@@ -1,0 +1,25 @@
+Extracting audio from video...
+MoviePy - Writing audio in ./uploads/audio/extracted_audio.wav
+MoviePy - Done.                                                                                                                     
+
+Transcribing audio using OpenAI Whisper...
+100%|████████████████████████████████████████| 139M/139M [00:00<00:00, 146MiB/s]
+Whisper Transcription:
+ Hi, my name is Oliver Thompson Smith, I'm 23 and following me attack four years ago I've been dealing with depression and PTSD. This led me to take a note with those last month. This wasn't the first time I've done this but with what I want to talk about today I think right now it'll be the last. For the past four years pretty much all I've been through hell and back. My moods and thoughts become so low that I convinced myself it wasn't worth anything to anybody. I didn't matter. People didn't really care or I wish it's in a very dark place and sadly taking these past four years to realise that this isn't the case. That all started really by just asking for help and after taking the overdose I planned it, realised I'd made the biggest mistake of my life and I went to the Samaritan's office, I knew there was one nearby that I wanted to go to, I just didn't really have to courage or I don't know.
+------------------------------------------------------------
+
+--- Summarizing ---
+
+Summarizing text...
+Device set to use cpu
+Summary:
+  Oliver Thompson Smith, 23, has been dealing with depression and PTSD since his attack four years ago . After taking the overdose I realised I'd made the biggest mistake of my life and I went to the Samaritan's office .
+
+--- Emotion Analysis ---
+
+Analyzing emotional state...
+Device set to use cpu
+Detected Emotion: sadness (Confidence: 0.88)
+
+--- Recommendation ---
+Strong negative emotions detected. Consider consulting a doctor or mental health expert.
