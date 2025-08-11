@@ -1,52 +1,51 @@
-# hackathon
-🧠 Together is an AI-powered mental health companion that transcribes and summarizes patient's videos, detects emotions, and recommends actions. It helps patients track emotional well-being, spot patterns, and share insights with therapists for more personalized support.
-🚀 Features
-🎙 Video-to-Text Transcription
+# 🧠 Together – AI-Powered Mental Health Companion
 
-Converts video diaries into accurate, time-stamped transcripts.
+**Together** is an AI-powered mental health application that transcribes, understands, and summarizes personal video diaries while detecting emotional states.  
+It helps individuals **track emotional well-being over time**, recognize patterns, receive actionable recommendations, and share insights with therapists or counselors for more personalized and effective mental health support.
 
-Uses OpenAI Whisper for high-accuracy speech recognition.
+---
 
-Audio preprocessing via ffmpeg and moviepy ensures clarity.
+## 🚀 Features
 
-📝 Summarization & Emotion Detection
+- **🎙 Video-to-Text Transcription**  
+  - Converts personal video diaries into accurate, time-stamped transcripts.  
+  - Uses **[OpenAI Whisper](https://github.com/openai/whisper)** for high-accuracy speech recognition across accents and noise levels.  
+  - Audio preprocessing with `ffmpeg` and `moviepy` for clarity.  
 
-Summarization with sshleifer/distilbart-cnn-12-6 – optimized for abstractive text summarization.
+- **📝 Summarization & Emotion Detection**  
+  - Summarization with **[sshleifer/distilbart-cnn-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)** – a distilled BART model optimized for abstractive summarization.  
+  - Emotion classification with **[j-hartmann/emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base)** – detects anger, joy, sadness, fear, surprise, disgust, and neutral emotions.  
+  - Identifies emotional triggers and suggests mental wellness actions.
 
-Emotion classification with j-hartmann/emotion-english-distilroberta-base – detects anger, joy, sadness, fear, surprise, disgust, and neutral emotions.
+- **📊 Emotional Progress Tracking**  
+  - Tracks emotional changes and key symptoms over time.  
+  - Displays progress in interactive dashboards.  
+  - Supports early detection of mental health concerns.
 
-Identifies symptoms, emotional triggers, and provides recommendations.
+- **☁ Cloud-Ready Deployment**  
+  - **Streamlit** interface for easy video recording/upload.  
+  - Backend powered by **AWS SageMaker** for scalable inference.  
+  - Models stored in **AWS S3** for efficient deployment.
 
-📊 Emotional Progress Tracking
+---
 
-Monitors emotional changes over time.
+## 🛠 Tech Stack
 
-Visual dashboards to track trends and improvements.
+| Component           | Technology |
+|--------------------|------------|
+| Speech-to-Text     | [OpenAI Whisper](https://github.com/openai/whisper) |
+| Summarization      | [DistilBART CNN-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6) |
+| Emotion Detection  | [Emotion English DistilRoBERTa Base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) |
+| Frontend           | Streamlit |
+| Backend            | AWS SageMaker |
+| Storage            | AWS S3 |
+| Audio Processing   | ffmpeg, moviepy |
 
-Suggests wellness actions (e.g., yoga, counseling, relaxation exercises).
+---
 
-☁ Cloud-Ready Deployment
+## 📦 Installation
 
-Streamlit interface for easy video recording/upload.
-
-Backend powered by AWS SageMaker for scalable inference.
-
-Model files stored in AWS S3 for efficient deployment.
-
-🛠 Tech Stack
-Component	Technology
-Speech-to-Text	OpenAI Whisper
-Summarization	DistilBART CNN-12-6
-Emotion Detection	Emotion English DistilRoBERTa Base
-Frontend	Streamlit
-Backend	AWS SageMaker
-Storage	AWS S3
-Audio Processing	ffmpeg, moviepy
-
-📦 Installation
-bash
-Copy
-Edit
+```bash
 # Clone the repository
 git clone https://github.com/your-username/together-ai.git
 cd together-ai
@@ -54,45 +53,49 @@ cd together-ai
 # Install dependencies
 pip install -r requirements.txt
 
-# Download summarization model
+# Install Git LFS for model downloads
 git lfs install
+
+# Download summarization model into summarization_model/ folder
 git clone https://huggingface.co/sshleifer/distilbart-cnn-12-6 summarization_model
 
-# Download emotion detection model
+# Download emotion detection model into emotion_model/ folder
 git clone https://huggingface.co/j-hartmann/emotion-english-distilroberta-base emotion_model
 
-# Run the app
+# Run the Streamlit app
 streamlit run app.py
-📌 Usage
-Record or Upload your daily video diary in the Together interface.
+```
 
-The app:
+---
 
-Extracts audio & transcribes it using Whisper.
+## 📌 Usage
 
-Summarizes key points.
+1. **Record or Upload** your video diary via the Together interface.  
+2. The app:
+   - Transcribes speech to text using Whisper.
+   - Summarizes the conversation using DistilBART.
+   - Detects emotional state using DistilRoBERTa.
+   - Suggests relevant mental wellness actions.  
+3. **View Your Dashboard** to monitor emotional trends and improvements.  
+4. **Share Insights** with a therapist for guided support.
 
-Detects your emotional state.
+---
 
-Suggests wellness actions.
+## 📅 Roadmap
 
-View Your Dashboard to monitor your mental health journey.
+- [ ] Integrate **LangChain/CrewAI** for proactive therapy recommendations.  
+- [ ] Add guided meditation and CBT activity suggestions.  
+- [ ] Secure in-app chat for therapist-patient communication.  
+- [ ] Predictive analytics for early intervention.
 
-Optionally share insights with a mental health professional.
+---
 
-📅 Roadmap
- Add LangChain/CrewAI for advanced health recommendations.
+## 👥 Team – AWS Hackathon “AI Titans”
 
- Integrate guided meditation and CBT activities.
+- **Mentor:** Virendra Bhatia  
+- **Team Members:** Subhodeep Mondal, Rakesh Krishnamurthy, Bhupendra Kumar, Binod Kumar Biswal, Abhirup Majumder, Priya Mondal
 
- Enable secure in-app therapist-patient chat.
+---
 
- Add predictive analytics for emotional health forecasting.
-
-👥 Team – AWS Hackathon “AI Titans”
-Mentor: Virendra Bhatia
-
-Team Members: Subhodeep Mondal, Rakesh Krishnamurthy, Bhupendra Kumar, Binod Kumar Biswal, Abhirup Majumder, Priya Mandal
-
-📜 License
+## 📜 License
 MIT License – you’re free to use, modify, and distribute with attribution.
