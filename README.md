@@ -1,6 +1,6 @@
-# 🧠 Together – AI-Powered Mental Health Companion
+# 🧠 Together – AI-Powered Medical Assistant
 
-🧠 Together is an AI-powered mental health companion that transcribes and summarizes patient's videos, detects emotions, and recommends actions. It helps patients track emotional well-being, spot patterns, and share insights with therapists for more personalized support.
+🧠 Together is an AI-powered medical assistant that transcribes and summarizes patient's videos, detects emotions, and recommends actions. It helps patients track emotional well-being, spot patterns, and share insights with therapists for more personalized support.
 
 ---
 
